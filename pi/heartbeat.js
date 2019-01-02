@@ -22,7 +22,7 @@ function sleep (ms) {
         try {
             await request.post(HEARTBEAT_URL).send({
                 data: await info()
-            }).timeout(10);
+            }).timeout(10*1000);
         } catch (e) {
             console.error(e);
         }
