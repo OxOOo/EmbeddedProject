@@ -10,6 +10,7 @@ let fs = require('fs');
 
 let config = require('./config');
 let { SERVER } = require('./config');
+let manager = require('./services/manager');
 
 let app = new Koa();
 
@@ -69,3 +70,5 @@ app.use(async ctx => {
 
 app.listen(SERVER.PORT, SERVER.ADDRESS);
 console.log(`listen on http://${SERVER.ADDRESS}:${SERVER.PORT}`);
+
+manager.mainLoop();
