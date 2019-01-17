@@ -1,4 +1,11 @@
-### 使用说明
+### 心跳程序使用说明
+
+```sh
+npm i
+node heartbeat.js
+```
+
+### 监控程序使用说明
 
 #### libturbojpeg.so.o
 > JPEG 压缩库  
